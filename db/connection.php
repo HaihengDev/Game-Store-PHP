@@ -1,0 +1,15 @@
+<?php
+$servername = "localhost";
+$username = "root";
+$password = "@@@@@@677677Heng";
+$database = "my_db";
+
+$conn = new mysqli($servername, $username, $password, $database);
+
+if ($conn->connect_error) {
+  die("connection failed: " . $conn->connect_error);
+}
+$conn->set_charset('utf8mb4');
+
+return $conn;
+?>

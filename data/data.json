@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "name": "God of War 2018",
+    "price": 59.99,
+    "discount": 30,
+    "imgUrl": "https://m.media-amazon.com/images/M/MV5BNjJiNTFhY2QtNzZkYi00MDNiLWEzNGEtNWE1NzBkOWIxNmY5XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    "id": 2,
+    "name": "God of War Ragnarök",
+    "price": 59.99,
+    "discount": 20,
+    "imgUrl": "https://m.media-amazon.com/images/M/MV5BMTQ5YTA1ZmUtYzVlNC00YjI2LWJhYjgtNWE4MjY2OWEzMGQwXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
+  },
+  {
+    "id": 3,
+    "name": "The Last of Us Part I",
+    "price": 69.99,
+    "discount": 25,
+    "imgUrl": "https://m.media-amazon.com/images/M/MV5BOTdkZTNmNDEtNmFiNy00MjhmLTkzNTQtMWY3MTA1MjYwZDZlXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    "id": 4,
+    "name": "The Last of Us Part II",
+    "price": 59.99,
+    "discount": 35,
+    "imgUrl": "https://m.media-amazon.com/images/M/MV5BODIwYWZmYWMtYTliNC00YWQ5LTg5ZmEtNTZhNmUxNjdiMzNiXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Red Dead Redemption 2",
+    "price": 59.99,
+    "discount": 40,
+    "imgUrl": "https://m.media-amazon.com/images/M/MV5BNzRhZjRhNTAtMGM5MS00YWRkLWE0ZmQtY2M2MjM2NmM4NTI5XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Cyberpunk 2077",
+    "price": 49.99,
+    "discount": 50,
+    "imgUrl": "https://m.media-amazon.com/images/M/MV5BZWYyNDRkNzAtOTI0Ny00NDQwLWE5M2YtMWFiZDdmMDc4MmQ0XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Elden Ring",
+    "price": 59.99,
+    "discount": 15,
+    "imgUrl": "https://m.media-amazon.com/images/M/MV5BZGQxMjYyOTUtNjYyMC00NzdmLWI4YmYtMDhiODU3Njc5ZDJkXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Horizon Zero Dawn",
+    "price": 39.99,
+    "discount": 45,
+    "imgUrl": "https://m.media-amazon.com/images/M/MV5BNGY2NjUzOTItMjkzNS00NzNiLWIwY2MtMzQ3MDIwY2RlNjdjXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
+  },
+  {
+    "id": 9,
+    "name": "Horizon Forbidden West",
+    "price": 69.99,
+    "discount": 20,
+    "imgUrl": "https://m.media-amazon.com/images/M/MV5BMjU5YzU1OTItMDM5YS00ZmFlLTgxZGQtODYzMDliMTQyZDdkXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
+  },
+  {
+    "id": 10,
+    "name": "Ghost of Tsushima",
+    "price": 59.99,
+    "discount": 30,
+    "imgUrl": "https://m.media-amazon.com/images/M/MV5BMzVhMGQyM2ItNTVkNi00NDZiLWFiMDMtMTQwOGE3NzQxZmM2XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
+  }
+]

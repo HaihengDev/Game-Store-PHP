@@ -1,0 +1,111 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.top-wrapper {
+  width: 100vw;
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.top-wrapper figure a img {
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+}
+
+.right-wrapper {
+  background: var(--white-200);
+  width: 15vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.right-wrapper div:first-child {
+  display: flex;
+  align-items: center;
+}
+
+.right-wrapper div:first-child img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+}
+
+.btn-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+nav {
+  width: 80vw;
+  background: #e8e8e8;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 2rem 0;
+  border-radius: 16px;
+}
+
+nav a {
+  position: relative;
+  text-decoration: none;
+  font-size: 1.3rem;
+  color: var(--text-primary);
+}
+
+nav a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  left: 0;
+  bottom: -2px;
+  background: dodgerblue;
+  transition: all 0.3s ease;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+nav a:hover {
+  color: dodgerblue;
+  transition: 0.3s;
+}
+
+.input-wrapper {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.input-wrapper input,
+button {
+  height: 50px;
+  padding: 1rem;
+}
+
+.input-wrapper input {
+  width: 80vw;
+  font-size: 1.25rem;
+}
+
+.input-wrapper button {
+  width: 60px;
+}
