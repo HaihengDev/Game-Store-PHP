@@ -1,6 +1,6 @@
 <?php
-require __DIR__ . '/vendor/autoload.php';
-$dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
+require __DIR__ . '/../vendor/autoload.php';
+$dotenv = Dotenv\Dotenv::createImmutable(__DIR__ . '/../');
 $dotenv->load();
 
 $servername='localhost';
@@ -14,6 +14,4 @@ if ($conn->connect_error) {
   die("connection failed: " . $conn->connect_error);
 }
 $conn->set_charset('utf8mb4');
-
-return $conn;
 ?>
