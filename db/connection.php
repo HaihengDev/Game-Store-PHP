@@ -1,8 +1,12 @@
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "@@@@@@677677Heng";
-$database = "my_db";
+require __DIR__ . '/vendor/autoload.php';
+$dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
+$dotenv->load();
+
+$servername='localhost';
+$username='root';
+$password=$_ENV['DB_PASSWORD'];
+$database=$_ENV['DATABASE'];
 
 $conn = new mysqli($servername, $username, $password, $database);
 
