@@ -2,7 +2,7 @@
 
 <section class="card-layout">
   <?php
-  include './db/connection.php';
+  include './config/connection.php';
 
   $sql = "SELECT name, price, discount, imgUrl  FROM products;";
   $result = $conn->query($sql);
