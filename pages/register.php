@@ -1,8 +1,8 @@
 <link rel="stylesheet" href="../style/register.css" />
-<link rel="styleheet" href="../style/global.css" />
+<link rel="stylesheet" href="../style/global.css" />
 
 <body>
-  <form mehthod="POST">
+  <form method="POST">
     <h2>Register</h2>
     <section class="username-wrapper">
       <label for="username">Username</label>
@@ -18,7 +18,7 @@
       <label for="password">Password</label>
       <div>
         <input type="password" name="password" id="password" placeholder="********" required>
-        <button id="see-password">😳</button>
+        <button type="button" id="see-password">😳</button>
       </div>
     </section>
 
@@ -26,7 +26,7 @@
       <label for="confirm">Confirm Password</label>
       <div>
         <input type="password" name="confirm" id="confirm" placeholder="********" required>
-        <button id="see-confirm">😳</button>
+        <button type="button" id="see-confirm">😳</button>
       </div>
     </section>
 
@@ -34,6 +34,10 @@
       <button type="reset">Reset</button>
       <button type="submit">Register</button>
     </section>
+
+    <?php
+    include '../auth/register.php';
+    ?>
   </form>
 
   <script>
@@ -42,7 +46,8 @@
     const password = document.getElementById('password');
     const confirm = document.getElementById('confirm');
 
-    seePassword.addEventListener('click', () => {
+    seePassword.addEventListener('click', (e) => {
+      e.preventDefault();
       if (password.type === "text") {
         password.type = "password";
         seePassword.textContent = "😳";
@@ -52,7 +57,8 @@
       }
     });
 
-    seeConfirm.addEventListener('click', () => {
+    seeConfirm.addEventListener('click', (e) => {
+      e.preventDefault();
       if (confirm.type === "text") {
         confirm.type = "password";
         seeConfirm.textContent = "😳";
