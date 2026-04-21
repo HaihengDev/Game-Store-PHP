@@ -4,7 +4,7 @@
 <header>
   <section class="top-wrapper">
     <figure>
-      <a href="">
+      <a href="/">
         <img src="../assets/logo.png" alt="Logo" />
       </a>
     </figure>
@@ -19,7 +19,7 @@
 
       <div class="btn-wrapper">
         <a href="">Login</a>
-        <a href="">Register</a>
+        <a href="./pages/login.php">Register</a>
       </div>
     </div>
   </section>
