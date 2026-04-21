@@ -112,10 +112,3 @@
 .btn-wrapper button:hover {
   background: #21867a;
 }
-
-/* Responsive tweak */
-@media (max-width: 500px) {
-  .card img {
-    height: 150px;
-  }
-}
