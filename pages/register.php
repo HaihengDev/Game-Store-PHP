@@ -1,3 +1,7 @@
+<?php
+include '../components/header.php';
+?>
+
 <form mehtod="POST">
   <section>
     <label for="username">Username</label>
