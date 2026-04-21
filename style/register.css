@@ -1,0 +1,104 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h2 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+form {
+  background: #fff;
+  padding: 30px;
+  width: 350px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Section spacing */
+form section {
+  margin-bottom: 18px;
+}
+
+/* Labels */
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Inputs */
+input {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  transition: 0.3s;
+}
+
+input:focus {
+  border-color: #667eea;
+  box-shadow: 0 0 5px rgba(102, 126, 234, 0.5);
+}
+
+/* Password wrapper (input + button) */
+.password-wrapper div,
+.confirm-wrapper div {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+/* Eye button */
+.password-wrapper button,
+.confirm-wrapper button {
+  position: absolute;
+  right: 8px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Buttons section */
+.btn-register-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Buttons */
+button[type="reset"],
+button[type="submit"] {
+  width: 48%;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+/* Reset button */
+button[type="reset"] {
+  background: #ccc;
+}
+
+button[type="reset"]:hover {
+  background: #999;
+}
+
+/* Submit button */
+button[type="submit"] {
+  background: #667eea;
+  color: white;
+}
+
+button[type="submit"]:hover {
+  background: #5a67d8;
+}
