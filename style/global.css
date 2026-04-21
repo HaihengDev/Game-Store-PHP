@@ -15,4 +15,5 @@
 
 body {
   background: var(--bg-primary);
+  width: 100vw;
 }
