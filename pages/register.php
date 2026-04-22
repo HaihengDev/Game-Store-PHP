@@ -73,9 +73,15 @@
 
       const formData = new FormData(form);
 
-      const res = await fetch("../auth/register.php", {
+      await fetch("../auth/register.php", {
         method: "POST",
         body: formData
+      }).then(res => res.json()).then(data => {
+        if (data.status === "success") {
+          window.location.href = data.redirect;
+        } else {
+          console.log(data.message);
+        }
       });
 
       const data = await res.json();

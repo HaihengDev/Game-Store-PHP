@@ -1,8 +1,6 @@
 <?php
 include '../config/auth.php';
 
-header('Content-Type: application/json');
-
 $username = trim($_POST['username'] ?? "");
 $email = trim($_POST['email'] ?? "");
 $passwordInput = trim($_POST['password'] ?? "");
@@ -34,7 +32,7 @@ $stmt = $conn->prepare("INSERT INTO users (username, email, password) VALUES (?,
 $stmt->bind_param("sss", $username, $email, $password);
 
 if ($stmt->execute()) {
-  echo json_encode(["status" => "success", "message" => "Registered successfully!"]);
+  echo json_encode(["status" => "success", "redirect" => "/"]);
   exit;
 } else {
   echo json_encode(['status' => 'error', 'message' => 'Database error']);
