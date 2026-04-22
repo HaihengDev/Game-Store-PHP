@@ -2,7 +2,7 @@
 <link rel="stylesheet" href="../style/global.css" />
 
 <body>
-  <form method="POST">
+  <form id="registerForm">
     <h2>Register</h2>
     <section class="username-wrapper">
       <label for="username">Username</label>
@@ -35,9 +35,7 @@
       <button type="submit">Register</button>
     </section>
 
-    <?php
-    include '../auth/register.php';
-    ?>
+    <p id="message" style="text-align: center;"></p>
   </form>
 
   <script>
@@ -45,6 +43,8 @@
     const seeConfirm = document.getElementById('see-confirm');
     const password = document.getElementById('password');
     const confirm = document.getElementById('confirm');
+    const form = document.getElementById('registerForm');
+    const message = document.getElementById('message');
 
     seePassword.addEventListener('click', (e) => {
       e.preventDefault();
@@ -65,6 +65,25 @@
       } else {
         confirm.type = "text";
         seeConfirm.textContent = "😣";
+      }
+    });
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+
+      const formData = new FormData(form);
+
+      const res = await fetch("../auth/register.php", {
+        method: "POST",
+        body: formData
+      });
+
+      const data = await res.json();
+      message.textContent = data.message;
+      message.style.color = data.status === "success" ? "green" : "red";
+
+      if (data.status === "success") {
+        form.reset();
       }
     });
   </script>
